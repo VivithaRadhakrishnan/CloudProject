@@ -1,10 +1,21 @@
 // src/styles.js
 const styles = {
   app: {
-    minHeight: '100vh',
-    backgroundColor: '#f8f9fa',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
-  },
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: '100vh',
+  backgroundColor: '#f8f9fa',
+  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  boxSizing: 'border-box',
+  overflowX: 'hidden'
+},
+container: {
+  flexGrow: 1,
+  maxWidth: '1200px',
+  margin: '0 auto',
+  padding: '2rem',
+  boxSizing: 'border-box'
+},
   header: {
     backgroundColor: '#2563eb',
     color: 'white',
@@ -46,11 +57,6 @@ const styles = {
     borderRight: 'none',
     borderLeft: 'none',
     borderBottom: '2px solid white'
-  },
-  container: {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '2rem'
   },
   tabs: {
     display: 'flex',
@@ -265,6 +271,8 @@ const styles = {
     boxSizing: 'border-box',
     fontFamily: 'inherit'
   }
+
 };
 
 export { styles };
+

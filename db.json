@@ -179,6 +179,23 @@
         "Knowledge of containerization"
       ],
       "matchScore": 75
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Engineer",
+      "company": "StartupXYZ",
+      "location": "Remote",
+      "salary": "$100,000 - $140,000",
+      "postedDate": "1 week ago",
+      "skills": ["Node.js", "React", "MongoDB", "AWS"],
+      "applicants": 28,
+      "description": "Join our fast-growing startup as a Full Stack Engineer. You will work on both frontend and backend systems, helping us scale our platform.",
+      "requirements": [
+        "3+ years of full stack development experience",
+        "Proficiency in Node.js and React",
+        "Experience with cloud services (AWS/GCP)",
+        "Strong communication skills"
+      ]
     }
   ]
 }

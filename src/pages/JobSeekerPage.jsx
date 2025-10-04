@@ -80,7 +80,7 @@ const JobSeekerPage = ({
             <h2>Recommended for You</h2>
             <button
               style={styles.button}
-              onClick={() => setShowUpload(true)}
+              onClick={() =>   setShowUpload(true)}
             >
               <Upload size={18} style={{marginRight: '0.5rem', display: 'inline'}} />
               Upload Resume

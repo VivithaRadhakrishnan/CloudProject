@@ -1,16 +1,14 @@
 // src/App.jsx
-// Main App component - Manages state for jobs, recommendations, modals; fetches data from API
+// Main App component - Job Seeker only version
 
 import React, { useState, useEffect } from 'react';
 import JobSeekerPage from './pages/JobSeekerPage';
-import RecruiterPage from './pages/RecruiterPage';
 import JobDetails from './components/JobDetails';
 import ApplyForm from './components/ApplyForm';
 import { styles } from './styles';
 import { API_BASE_URL, USER_ID } from './constants';
 
 const App = () => {
-  const [userType, setUserType] = useState('jobseeker'); // 'jobseeker' or 'recruiter'
   const [selectedJob, setSelectedJob] = useState(null);
   const [showApplyForm, setShowApplyForm] = useState(false);
   const [applyJobId, setApplyJobId] = useState(null);
@@ -55,7 +53,7 @@ const App = () => {
     fetchRecommendations();
   }, []);
 
-  // Handler for resume upload (for recommendations)
+  // Handler for resume upload
   const handleResumeUpload = async (file) => {
     const formData = new FormData();
     formData.append('resume', file);
@@ -68,6 +66,7 @@ const App = () => {
       });
       if (!response.ok) throw new Error('Upload failed');
       alert('Resume uploaded successfully! Skills extracted.');
+
       // Refetch recommendations after upload
       setLoadingRecommendations(true);
       const recResponse = await fetch(`${API_BASE_URL}/recommendations?userId=${USER_ID}`);
@@ -85,11 +84,6 @@ const App = () => {
     setShowApplyForm(false);
     setApplyJobId(null);
     alert('Application submitted successfully!');
-  };
-
-  // Handler for posting new job
-  const handlePostJob = (newJob) => {
-    setAllJobs([newJob, ...allJobs]);
   };
 
   // Handler for viewing job details
@@ -111,47 +105,23 @@ const App = () => {
     setSelectedJob(null); // Close details if open
   };
 
-  if (loadingAllJobs) return <p>Loading...</p>;
+  if (loadingAllJobs) return <p>Loading jobs...</p>;
 
   return (
     <div style={styles.app}>
       <header style={styles.header}>
-        <h1 style={styles.headerTitle}>JobMatch Platform</h1>
-        <nav style={styles.nav}>
-          <button
-            style={{
-              ...styles.navButton,
-              ...(userType === 'jobseeker' ? styles.navButtonActive : {})
-            }}
-            onClick={() => setUserType('jobseeker')}
-          >
-            Job Seeker
-          </button>
-          <button
-            style={{
-              ...styles.navButton,
-              ...(userType === 'recruiter' ? styles.navButtonActive : {})
-            }}
-            onClick={() => setUserType('recruiter')}
-          >
-            Recruiter
-          </button>
-        </nav>
+        <h1 style={styles.headerTitle}>JobMatch - Job Seeker</h1>
       </header>
 
-      {userType === 'jobseeker' ? (
-        <JobSeekerPage
-          recommendedJobs={recommendedJobs}
-          allJobs={allJobs}
-          onJobClick={handleJobClick}
-          onApply={handleApply}
-          onResumeUpload={handleResumeUpload}
-          loadingRecommendations={loadingRecommendations}
-          errorRecommendations={errorRecommendations}
-        />
-      ) : (
-        <RecruiterPage onPostJob={handlePostJob} />
-      )}
+      <JobSeekerPage
+        recommendedJobs={recommendedJobs}
+        allJobs={allJobs}
+        onJobClick={handleJobClick}
+        onApply={handleApply}
+        onResumeUpload={handleResumeUpload}
+        loadingRecommendations={loadingRecommendations}
+        errorRecommendations={errorRecommendations}
+      />
 
       {selectedJob && (
         <JobDetails
