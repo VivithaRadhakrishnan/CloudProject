@@ -1,0 +1,184 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Frontend Developer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $160,000",
+      "postedDate": "2 days ago",
+      "skills": ["React", "TypeScript", "CSS", "Redux"],
+      "applicants": 15,
+      "description": "We are looking for an experienced Frontend Developer to join our dynamic team. You will be responsible for building and maintaining user-facing features for our web applications.",
+      "requirements": [
+        "5+ years of experience with React",
+        "Strong understanding of JavaScript and TypeScript",
+        "Experience with modern CSS frameworks",
+        "Excellent problem-solving skills"
+      ],
+      "matchScore": 85
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Engineer",
+      "company": "StartupXYZ",
+      "location": "Remote",
+      "salary": "$100,000 - $140,000",
+      "postedDate": "1 week ago",
+      "skills": ["Node.js", "React", "MongoDB", "AWS"],
+      "applicants": 28,
+      "description": "Join our fast-growing startup as a Full Stack Engineer. You will work on both frontend and backend systems, helping us scale our platform.",
+      "requirements": [
+        "3+ years of full stack development experience",
+        "Proficiency in Node.js and React",
+        "Experience with cloud services (AWS/GCP)",
+        "Strong communication skills"
+      ],
+      "matchScore": 90
+    },
+    {
+      "id": 3,
+      "title": "Backend Developer",
+      "company": "DataFlow Systems",
+      "location": "New York, NY",
+      "salary": "$110,000 - $150,000",
+      "postedDate": "3 days ago",
+      "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+      "applicants": 12,
+      "description": "We need a talented Backend Developer to design and implement scalable server-side applications and APIs.",
+      "requirements": [
+        "4+ years of Python development",
+        "Experience with Django or Flask",
+        "Strong database design skills",
+        "Knowledge of containerization"
+      ],
+      "matchScore": 75
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "company": "CloudNine",
+      "location": "Austin, TX",
+      "salary": "$115,000 - $155,000",
+      "postedDate": "5 days ago",
+      "skills": ["Kubernetes", "AWS", "Terraform", "CI/CD"],
+      "applicants": 20,
+      "description": "Seeking a DevOps Engineer to manage our infrastructure and improve our deployment pipelines.",
+      "requirements": [
+        "3+ years of DevOps experience",
+        "Expertise in Kubernetes and Docker",
+        "Experience with Infrastructure as Code",
+        "Strong scripting skills"
+      ],
+      "matchScore": 80
+    }
+  ],
+  "open-jobs": [
+    {
+      "id": 1,
+      "title": "Senior Frontend Developer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $160,000",
+      "postedDate": "2 days ago",
+      "skills": ["React", "TypeScript", "CSS", "Redux"],
+      "applicants": 15,
+      "description": "We are looking for an experienced Frontend Developer to join our dynamic team. You will be responsible for building and maintaining user-facing features for our web applications.",
+      "requirements": [
+        "5+ years of experience with React",
+        "Strong understanding of JavaScript and TypeScript",
+        "Experience with modern CSS frameworks",
+        "Excellent problem-solving skills"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Engineer",
+      "company": "StartupXYZ",
+      "location": "Remote",
+      "salary": "$100,000 - $140,000",
+      "postedDate": "1 week ago",
+      "skills": ["Node.js", "React", "MongoDB", "AWS"],
+      "applicants": 28,
+      "description": "Join our fast-growing startup as a Full Stack Engineer. You will work on both frontend and backend systems, helping us scale our platform.",
+      "requirements": [
+        "3+ years of full stack development experience",
+        "Proficiency in Node.js and React",
+        "Experience with cloud services (AWS/GCP)",
+        "Strong communication skills"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Backend Developer",
+      "company": "DataFlow Systems",
+      "location": "New York, NY",
+      "salary": "$110,000 - $150,000",
+      "postedDate": "3 days ago",
+      "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+      "applicants": 12,
+      "description": "We need a talented Backend Developer to design and implement scalable server-side applications and APIs.",
+      "requirements": [
+        "4+ years of Python development",
+        "Experience with Django or Flask",
+        "Strong database design skills",
+        "Knowledge of containerization"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "company": "CloudNine",
+      "location": "Austin, TX",
+      "salary": "$115,000 - $155,000",
+      "postedDate": "5 days ago",
+      "skills": ["Kubernetes", "AWS", "Terraform", "CI/CD"],
+      "applicants": 20,
+      "description": "Seeking a DevOps Engineer to manage our infrastructure and improve our deployment pipelines.",
+      "requirements": [
+        "3+ years of DevOps experience",
+        "Expertise in Kubernetes and Docker",
+        "Experience with Infrastructure as Code",
+        "Strong scripting skills"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "title": "Senior Frontend Developer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $160,000",
+      "postedDate": "2 days ago",
+      "skills": ["React", "TypeScript", "CSS", "Redux"],
+      "applicants": 15,
+      "description": "We are looking for an experienced Frontend Developer to join our dynamic team. You will be responsible for building and maintaining user-facing features for our web applications.",
+      "requirements": [
+        "5+ years of experience with React",
+        "Strong understanding of JavaScript and TypeScript",
+        "Experience with modern CSS frameworks",
+        "Excellent problem-solving skills"
+      ],
+      "matchScore": 85
+    },
+    {
+      "id": 3,
+      "title": "Backend Developer",
+      "company": "DataFlow Systems",
+      "location": "New York, NY",
+      "salary": "$110,000 - $150,000",
+      "postedDate": "3 days ago",
+      "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+      "applicants": 12,
+      "description": "We need a talented Backend Developer to design and implement scalable server-side applications and APIs.",
+      "requirements": [
+        "4+ years of Python development",
+        "Experience with Django or Flask",
+        "Strong database design skills",
+        "Knowledge of containerization"
+      ],
+      "matchScore": 75
+    }
+  ]
+}
