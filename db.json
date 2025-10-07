@@ -1,0 +1,59 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "description": "Develop web applications",
+      "skills": ["React", "Node.js"],
+      "location": "Remote",
+      "salary": "100k",
+      "applicantsCount": 3
+    },
+    {
+      "id": 2,
+      "title": "Data Scientist",
+      "description": "Analyze data and build models",
+      "skills": ["Python", "Machine Learning"],
+      "location": "New York",
+      "salary": "120k",
+      "applicantsCount": 2
+    }
+  ],
+  "applicants": [
+    {
+      "id": 1,
+      "jobId": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "skills": ["React", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "jobId": 1,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "skills": ["Node.js", "Express"]
+    },
+    {
+      "id": 3,
+      "jobId": 1,
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "skills": ["React", "Node.js"]
+    },
+    {
+      "id": 4,
+      "jobId": 2,
+      "name": "Alice Brown",
+      "email": "alice@example.com",
+      "skills": ["Python", "SQL"]
+    },
+    {
+      "id": 5,
+      "jobId": 2,
+      "name": "Charlie Davis",
+      "email": "charlie@example.com",
+      "skills": ["Machine Learning", "R"]
+    }
+  ]
+}
